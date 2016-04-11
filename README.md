@@ -1,24 +1,6 @@
-## README
+[![IRC](https://img.shields.io/badge/IRC-%23hackerspace--lbn-blue.svg)](https://webchat.freenode.net/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#Barcamp.io
+A Open Source service to collect events in your city.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This Api is written in ruby on rails. Web App which is using this api is in another repository in this organization.

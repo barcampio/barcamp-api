@@ -4,7 +4,7 @@ class CreateEvents < ActiveRecord::Migration[5.0]
       t.json :payload
       t.datetime :start_at, index: true
       t.datetime :end_at, index: true
-      t.string :facebook_id, index: true
+      t.integer :facebook_id, limit: 8, index: true
 
       t.timestamps
     end

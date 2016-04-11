@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 20160405194923) do
     t.json     "payload"
     t.datetime "start_at"
     t.datetime "end_at"
-    t.string   "facebook_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "facebook_id", limit: 8
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   add_index "events", ["end_at"], name: "index_events_on_end_at", using: :btree

@@ -3,7 +3,7 @@ class Event < ApplicationRecord
 
 	def update_facebook
 		self.payload = Facebook.new.get_event(facebook_id)
-		self.start_at = payload[:start_time]
-		self.end_at = payload[:end_time]
+		self.start_at = payload[:start_time].to_time
+		self.end_at = payload[:end_time].to_time
 	end
 end
